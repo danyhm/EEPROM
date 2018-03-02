@@ -26,3 +26,14 @@ WARNING !!
 1- This code does not have flash wear level algorithm. you should be careful how much you write in a specific address. if you don't know what this is refer to ST document about EEPROM emulation and preferebly use that code.
 <br />
 2- Page trasfer is done automatically. if you need to fully erase a page , you should do it by it's PAGE Number not virtual Address !
+<br />
+TODO:
+<br />
+1- Add a preprocessor option to change between RAM transfer and page trasfer
+<br />
+2- Add compiler options in readme to preserve the flash space.
+<br />
+3- Inspect possible option to add functions to handle 16 bit flash writing.
+<br />
+4- implement a way to detect data being written in overlapping pages.
+<br />
