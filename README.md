@@ -1,7 +1,13 @@
 # Multipage EEPROM emulation for STM32
 <br />
 <br />
-Based on EEPROM emulation of nimaltd.
+Based on EEPROM emulation of nimaltd. unlike his code this library uses a transfer page instead of RAM to change the contents of an unerased flash page.
+<br />
+PROs : it uses no RAM.
+<br />
+Cons : The transfer page will wear out pretty quick if too much data is changed.
+<br />
+this library is useful when the amount of data to be writen is very much but they are not going to be changed often.
 <br />
 <br />
 How to use :
